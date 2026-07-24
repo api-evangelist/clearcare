@@ -1,7 +1,30 @@
 aid: clearcare
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/clearcare.png
 name: ClearCare
-description: ClearCare is a company surfaced as a portfolio company of battery-ventures and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  ClearCare (originally ClearCare Online) is a web-based home care agency
+  management platform founded in 2011 and headquartered in San Francisco.
+  It provides non-medical home care agencies with back-office and point-of-care
+  tooling: caregiver scheduling, telephony-based clock-in/clock-out and
+  electronic visit verification (EVV), billing and payroll, client and caregiver
+  management, care planning, a family room portal, and business analytics.
+  ClearCare was backed by Battery Ventures and Cendana Capital and was acquired
+  by WellSky (formerly Mediware) in 2019; the product is now marketed as WellSky
+  Personal Care, and the clearcareonline.com domain redirects to WellSky. This
+  profile was surfaced as a Battery Ventures portfolio company and enriched as a
+  historical company record — ClearCare no longer operates a standalone public
+  developer or API program.
 url: https://raw.githubusercontent.com/api-evangelist/clearcare/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +32,38 @@ x-backed-by:
 - battery-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: wellsky
+x-acquired-year: '2019'
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Home Care
+- Home Health
+- Healthcare
+- Agency Management
+- Caregiving
+- Electronic Visit Verification
+- SaaS
+- Scheduling
 apis: []
+common:
+- type: DomainSecurity
+  url: security/clearcare-domain-security.yml
+- type: Website
+  url: https://www.clearcareonline.com
+- type: Website
+  name: WellSky Personal Care (acquirer product)
+  url: https://wellsky.com/personal-care-software/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
